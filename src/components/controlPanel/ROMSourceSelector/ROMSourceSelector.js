@@ -10,6 +10,7 @@ import { NOTIFICATION_MESSAGES } from "../../../notification.messages";
 import { AVAILABLE_GAMES } from "../homebrew/availableGames";
 
 import MyCollection from "../myCollection/myCollection";
+import Autonomi from "../autonomi/autonomi";
 import Homebrew from "../homebrew/homebrew";
 import ROMScraper from "../ROMScraper/ROMScraper";
 import GooglePicker from "../../googlePicker/googlePicker";
@@ -236,6 +237,13 @@ export default class ROMSourceSelector extends Component {
     );
   }
 
+    viewAutonomi() {
+    this.state.controlPanel.addComponentToControlPanelViewStack(
+      "Autonomi",
+      <Autonomi />
+    );
+  }
+
   viewHomebrew() {
     this.state.controlPanel.addComponentToControlPanelViewStack(
       "Homebrew",
@@ -266,6 +274,9 @@ export default class ROMSourceSelector extends Component {
     // Number of Open Source Games
     let numberOfHomebrew = AVAILABLE_GAMES.length;
 
+    // TODO
+    let numberOfAutonomi = 0;
+
     // Our buttons for selecting the source
     let sourceOptions = (
       <ul class="ROMSourceSelector__list">
@@ -284,6 +295,21 @@ export default class ROMSourceSelector extends Component {
             </div>
           </button>
           <div class="list-button">{numberOfROMsInCollection}</div>
+        </li>
+             <li class="ROMSourceSelector__list__item">
+          <button
+            onClick={() => {
+              this.viewAutonomi();
+            }}
+            aria-label={`Autonomi - ${numberOfAutonomi} ROMs`}
+          >
+            <div class="ROMSourceSelector__list__item__icon">🌍</div>
+
+            <div class="ROMSourceSelector__list__item__label">
+              Autonomi ROMs
+            </div>
+          </button>
+          <div class="list-button">{numberOfAutonomi}</div>
         </li>
         <li class="ROMSourceSelector__list__item">
           <button

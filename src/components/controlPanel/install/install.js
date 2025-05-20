@@ -17,7 +17,7 @@ export default class Install extends Component {
         <h1>Install</h1>
         <div class="install__logo">⬇️</div>
         <p>
-          These are instructions for installing VaporBoy as a{" "}
+          These are instructions for installing AutoBoy as a{" "}
           <a
             href="https://developers.google.com/web/progressive-web-apps/"
             target="_blank"
@@ -61,14 +61,14 @@ export default class Install extends Component {
           (View More) button in the top right corner of your web browser, and
           then, <b>"Add to homescreen"</b>. Alternatively on Firefox, there may
           be a "home" icon with a plus (+) icon inside it near the URL bar to
-          install VaporBoy.
+          install AutoBoy.
         </p>
         <h3>iOS</h3>
         <p>
           Click the
-          <img src="/assets/iosShare.png" class="install__ios-icon" />
+          <img src="assets/iosShare.png" class="install__ios-icon" />
           button, and then the
-          <img src="/assets/iosAddToHomescreen.png" class="install__ios-icon" />
+          <img src="assets/iosAddToHomescreen.png" class="install__ios-icon" />
           button.
         </p>
         <h3>Desktop (Chrome)</h3>
@@ -82,7 +82,7 @@ export default class Install extends Component {
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
           </svg> in the upper right hand corner to open your browser's menu.
-          Then click the "Install VaporBoy..." list item to install the application.
+          Then click the "Install AutoBoy..." list item to install the application.
         </p>
       </div>
     );

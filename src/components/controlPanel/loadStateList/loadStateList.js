@@ -38,16 +38,16 @@ export default class LoadStateList extends Component {
     }
 
     Pubx.get(PUBX_CONFIG.CONFIRMATION_MODAL_KEY).showConfirmationModal({
-      title: "⚠️ VaporBoy / Save State Version Mismatch ⚠️",
+      title: "⚠️ AutoBoy / Save State Version Mismatch ⚠️",
       contentElement: (
         <div>
-          You are trying to open a save state made with VaporBoy version <b>{saveStateVersion}</b>.
-          However, the current VaporBoy being used is <b>{packageJson.version}</b>.
-          Loading this save state may no longer work with this version of VaporBoy.
+          You are trying to open a save state made with AutoBoy version <b>{saveStateVersion}</b>.
+          However, the current AutoBoy being used is <b>{packageJson.version}</b>.
+          Loading this save state may no longer work with this version of AutoBoy.
           <b>If the save state loads correctly</b>, feel free to continue playing and create new save states. 
           But note, this can alter the ROM in unexpected ways, and cause bugs down the line.
-          <b>If the save state loads incorrectly</b>, please try to open this save state again in a Legacy version of VaporBoy.
-          Legacy Versions can be accessed from the <b>Control Panel > Legacy</b> menu.
+          <b>If the save state loads incorrectly</b>, please try to open this save state again in a Legacy version of AutoBoy.
+          Legacy Versions can be accessed from the <b>Control Panel - Legacy</b> menu.
           To go to the suggested legacy version directly, click the option below.
         </div>
       ),
@@ -127,7 +127,7 @@ export default class LoadStateList extends Component {
         
         let saveStateVersionElement = (<div />);
         if (saveState.vaporBoyVersion) {
-          saveStateVersionElement = (<div>VaporBoy Version: {saveState.vaporBoyVersion}</div>)
+          saveStateVersionElement = (<div>AutoBoy Version: {saveState.vaporBoyVersion}</div>)
         }
 
         saveStates.push(

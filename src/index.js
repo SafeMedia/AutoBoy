@@ -6,7 +6,7 @@ import { Pubx } from "./services/pubx";
 import { PUBX_CONFIG } from "./pubx.config";
 import { WasmBoy } from "wasmboy";
 
-import { NOTIFICATION_MESSAGES } from "./notification.messages";
+
 
 import VaporBoyDesktop from "./components/vaporboyDesktop/vaporboyDesktop";
 import VaporBoyMobileLandscape from "./components/vaporboyMobileLandscape/vaporboyMobileLandscape";
@@ -22,10 +22,6 @@ export default class App extends Component {
   constructor() {
     super();
 
-    // Add our 3p Scripts
-    if (typeof window !== "undefined") {
-      this.initialize3p();
-    }
 
     // Initialize our Pubx
     PUBX_CONFIG.INITIALIZE();
@@ -100,33 +96,9 @@ export default class App extends Component {
     // Updated the options clases
     this.updateOptionsClasses();
 
-    // Print the beta disclaimer
-    Pubx.get(PUBX_CONFIG.NOTIFICATION_KEY).showNotification(
-      NOTIFICATION_MESSAGES.BETA_VERSION
-    );
+
   }
 
-  initialize3p() {
-    const loadScript = require("load-script");
-
-    // Setup Google Analytics
-    loadScript(
-      "https://www.googletagmanager.com/gtag/js?id=UA-125157178-1",
-      function(err, script) {
-        if (!err) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            window.dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-          gtag("config", "UA-125157178-1");
-
-          // Add analytics to window
-          window.gtag = gtag;
-        }
-      }
-    );
-  }
 
   // Function to change out layout, called by resize events and things
   changeLayout() {

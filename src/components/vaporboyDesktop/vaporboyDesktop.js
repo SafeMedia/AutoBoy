@@ -89,53 +89,7 @@ export default class VaporBoyDesktop extends Component {
         {/* Main Desktop Area */}
         <div class="vaporboy-desktop__main">
 
-          <div class="vaporboy-desktop__main__shortcuts">
-            <ul>
-              <li>
-                <div class="vaporboy-desktop__main__shortcuts__icon">
-                  <img src={getVaporBoyLogo()} />
-                </div>
-                <div class="vaporboy-desktop__main__shortcuts__text">My Vaporboy</div>
-              </li>
-
-              <li>
-                <div class="vaporboy-desktop__main__shortcuts__icon">
-                  🌐
-                </div>
-                <div class="vaporboy-desktop__main__shortcuts__text">Surf the Web</div>
-              </li>
-
-              <li>
-                <div class="vaporboy-desktop__main__shortcuts__icon">
-                  ⚡
-                </div>
-                <div class="vaporboy-desktop__main__shortcuts__text">VinAMP</div>
-              </li>
-
-              <li>
-                <div class="vaporboy-desktop__main__shortcuts__icon">
-                  ⚔️
-                </div>
-                <div class="vaporboy-desktop__main__shortcuts__text">A E S T H E T I C of Empires</div>
-              </li>
-
-              <li>
-                <div class="vaporboy-desktop__main__shortcuts__icon">
-                  🛹
-                </div>
-                <div class="vaporboy-desktop__main__shortcuts__text">Aaron Turner's Internet Skater 2</div>
-              </li>
-
-              <li>
-                <div class="vaporboy-desktop__main__shortcuts__icon">
-                  <img src="assets/levelcar.png" />
-                </div>
-                <div class="vaporboy-desktop__main__shortcuts__text">Get  Dis  Money</div>
-              </li>
-
-
-            </ul>
-          </div>
+    
 
           <div class="vaporboy-desktop__main__window">
 
@@ -147,7 +101,7 @@ export default class VaporBoyDesktop extends Component {
                     class="vaporboy-desktop__vaporboy-logo"
                     src={getVaporBoyLogo()}
                   />
-                  V A P O R B O Y
+                  A U T O B O Y
                 </div>
 
                 <div class="aesthetic-windows-95-modal-title-bar-controls">

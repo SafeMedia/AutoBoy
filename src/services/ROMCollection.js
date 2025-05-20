@@ -9,7 +9,7 @@ import { NOTIFICATION_MESSAGES } from "../notification.messages";
 
 const packageJson = require("../../package.json");
 
-// Our key for our vaporboy collection
+// Our key for our autoboy collection
 const IDB_COLLECTION_KEY = "vaporboy_collection";
 
 class ROMCollectionService {

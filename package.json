@@ -1,13 +1,13 @@
 {
-  "name": "vaporBoy",
-  "displayName": "VaporBoy",
-  "author": "Aaron Turner",
-  "version": "0.2.0",
+  "name": "AutoBoy",
+  "displayName": "AutoBoy",
+  "author": "cobite",
+  "version": "0.1.0",
   "legacyVersions": [
-    "0.1.1"
+    "0.1.0"
   ],
   "license": "Apache-2.0",
-  "description": "A Gameboy / Gameboy Color Emulator PWA. ⚛️ Powered by wasmBoy. 🎮",
+  "description": "A Gameboy / Gameboy Color Emulator for Autonomi. ⚛️ Powered by wasmBoy. 🎮",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run preact:dev",

@@ -1,6 +1,6 @@
 {
-  "name": "Vapor Boy",
-  "short_name": "VaporBoy",
+  "name": "AutoBoy",
+  "short_name": "AutoBoy",
   "description": "An A E S T H E T I C GBC Emulator.",
   "start_url": "/",
   "display": "fullscreen",
@@ -9,7 +9,7 @@
   "theme_color": "#673ab8",
   "icons": [
     {
-      "src": "/assets/icons/web_hi_res_512.png",
+      "src": "assets/icons/web_hi_res_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

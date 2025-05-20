@@ -1,22 +1,11 @@
-# VaporBoy
+# AutoBoy
 
-<!-- Badges -->
-
-[![Build Status](https://travis-ci.org/torch2424/vaporBoy.svg?branch=master)](https://travis-ci.org/torch2424/vaporBoy)
-[![License Badge](https://img.shields.io/github/license/torch2424/vaporBoy.svg)](https://github.com/torch2424/vaporBoy/blob/master/LICENSE)
-![GitHub package version](https://img.shields.io/github/package-json/v/torch2424/vaporBoy.svg)
-
-An _A E S T H E T I C_ GB / GBC Emulator PWA. Powered by [wasmBoy](https://github.com/torch2424/wasmBoy).
-
-[Talk given at WebAssembly SF March 28th, 2019](https://youtu.be/ZlL1nduatZQ)
-
-![Vapor Boy Walk through gif](./readme_assets/VaporboyWalkThrough.gif)
+![Auto Boy Walk through gif](./readme_assets/VaporboyWalkThrough.gif)
 
 # Table of Contents
 
 * [Features](#features)
 * [Example Gifs &amp; Screenshots](#example-gifs--screenshots)
-* [Lighthouse Score](#lighthouse-score)
 * [Contributing](#contributing)
   * [Installation](#installation)
   * [Npm Scripts &amp; CLI Commands](#npm-scripts--cli-commands)
@@ -52,9 +41,6 @@ An _A E S T H E T I C_ GB / GBC Emulator PWA. Powered by [wasmBoy](https://githu
 
 <img alt="Portrait Layout" src="./readme_assets/portraitLayout.png" height="300px"/> <img alt="Portrait ROM source Selector" src="./readme_assets/portraitROMSourceSelector.png" height="300px"/> <img alt="Portrait Home brew ROMs" src="./readme_assets/portraitHomebrewROMs.png" height="300px"/> <img alt="Portrait Effects" src="./readme_assets/portraitEffects.png" height="300px"/> <img alt="Portrait Tobu Tobu Girl" src="./readme_assets/portraitTobu.png" height="300px"/>
 
-# Lighthouse Score
-
-![Lighthouse Score Screenshot. Approximately 91](./readme_assets/lighthouse_screenshot.png)
 
 # Contributing
 
@@ -130,9 +116,7 @@ npm run electron:dev
 
 * [App Icon Generator](<https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=image&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=square&effects=none&name=ic_launcher>)
 
-# Privacy
 
-Analytics is used on this application simply for performance monitoring, and tracking popularity of the applications. The following events are sent, with nothing more than the event name. The analytics provider used is [Google Analytics](https://support.google.com/analytics/answer/6004245?ref_topic=2919631). 
 
 **The Events sent are:**
 
